@@ -1,0 +1,72 @@
+@font-face {
+    font-family: InfoTextWebPro;
+    src: url('fonts/InfoTextWebPro.woff');
+}
+
+*{
+    margin: 0;
+    font-family: InfoTextWebPro;
+}
+header{
+    display: flex;
+    border: 5px solid rgb(0, 200, 255);
+    padding: 18px;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.links a{
+    text-decoration:none;
+    color: black;
+    display: inline;
+    padding: 25px 20px;
+    border: 1px ridge oldlace;
+    margin: 1px;
+    font-weight: 100;
+}
+
+.ichi img{
+    height: 100dvh;
+    object-fit: cover;
+    width: 100%;
+    vertical-align: middle;
+    
+}
+
+.text-one{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    flex-flow: column wrap;
+    color: cornsilk;
+}
+
+h1{
+    font-size:106px;
+    font-weight: 100;
+    
+}
+
+.logo_footer{
+    height: auto;
+    max-width: 100%;
+}
+
+.top_footer{
+
+    padding: 70px;
+    padding-bottom: 30px;
+    display: flex;
+    flex: auto;
+}
