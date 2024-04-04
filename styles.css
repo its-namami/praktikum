@@ -6,13 +6,9 @@
 *{
     margin: 0;
     font-family: InfoTextWebPro;
-    
+    box-sizing: border-box;
 }
-/*header{
-    display: flex;
-    padding: 18px;
-    justify-content: space-between;
-}*/
+
 
 body{
     overflow-x: hidden;
@@ -78,18 +74,6 @@ li a{
 
 
 .text-one{
-    /*!align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    flex-flow: column wrap;
-    color: cornsilk;
-    margin-top: 100px;
-    z-index: 1;*/
     position:absolute;
     top:50%;
     left:50%; 
@@ -252,19 +236,6 @@ p{
 
 
 
-/*
-.book{
-    padding: 0 8px;
-    filter: drop-shadow(0 0 15px black);
-    display: flex;
-    flex-flow: column wrap;
-    height: 600px;
-    flex: 0 0 auto;
-    width: 33%;
-}
-
-*/
-
 .book {
     width: 30%;
     height: 600px;
@@ -272,7 +243,6 @@ p{
     flex: none;
     margin: 0 8px;
     box-sizing: border-box;
-    border: 1px solid black;
     box-shadow: 0 0 30px 5px rgba(0,0,0,0.2);
     
 }
@@ -344,64 +314,297 @@ p{
     font-weight: 600;
 }
 
-.ONE-clickables{
-    width: 100%;
-    padding: 20px;
+.button-areal{
     display: flex;
     justify-content: space-around;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
 }
 
-.ONE-clickables button{
-    border: none;
-    background-color: white;
-    color: lightgrey;
+.one-button{
+    padding: 3vh 5vw;
+}
+
+#oneStyle{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.areal{
+    display: none;
+    width: 100%;
+}
+
+.areal.active {
+    display: flex;
+}
+
+.image-areal{
+    width: 50%;
+    
+    display: flex;
+    flex: 1 1 auto;
+
+}
+
+.image-areal img{
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 50vw;
+}
+
+.one-button{
     font-size: 24px;
-    font-weight: 100;
+    background-color: white;
+    border: none;
+    color: lightgrey;
 }
 
-.ONE-clickables button:focus{
+.one-button.active{
     color: black;
     font-weight: 900;
 }
 
-.ONE-clickables button:after{
+.button-areal .one-button.active:after{
     content: "";
     display: block;
     width: 100%;
-    height: 3px; /* Adjust the height of the line as needed */
-    background-color: red; /* Change the color of the line */
-    margin-top: 5px; /* Adjust the distance between the button and the line */
+    height: 3px; 
+    background-color: crimson; 
+    margin-top: 5px;
 }
 
-.tiles{
+.text-areal{
     display: flex;
-    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-areal p{
+    
+    padding: 0 15vw 0 5vw;
+    
+}
+
+strong{
+    font-size: 20px;
+}
+
+#blumen{
+    display: flex;
+    flex-flow: row wrap;
+    width: 95%;
+    justify-content: center;
+    
+}
+
+.sortiment{
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 30%;
+    margin-top: 5dvh;
+    padding: 1vw;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.không_ai_hiểu_toi{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
     width: 100%;
-    border: 1px solid blue;
+    text-align: center;
+    
+    
 }
 
-.ONE-content{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid blue;
+
+.imgPlaceholder img{
+    margin-top: 15dvh;
+    width: 100%;
+    z-index: 2;
 }
 
-.ONE-content img{
-    width: 50%;
-    margin-top: 50px;
+.btnSortiment{
+    margin: 5% 0 3% 0;
 }
 
-.ONE-image-placeholder{
-    width: 50%;
-}
-
-.ONE-text-placeholder{
+.btnSortiment{
+    padding: 25px 45px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 28%;
+    bottom: 72%;
+}
+
+.btnSortiment:hover {
+    color: #fff;
+    background-color: #E3000F;
+    transition: 0.7s;
+    border-color: #E3000F;
+    -webkit-animation: color 4s forwards;
+    
+    animation-iteration-count: infinite;
+    
+}
+
+
+@-webkit-keyframes color {
+     0% { background-color: white; color: rgb(121, 53, 53); border-color: black;}
+     15%   { background-color: #891652; border-radius: 3%; border-color: #EABE6C}
+     60%  { background-color: red;border-radius: 20%; transform: scale(1.1); color: #fff; border-color: gold; font-size: 14px;}
+     90% { background-color: #891652; border-radius: 3%; border-color: #EABE6C}
+     100% {background-color: white; color: rgb(121, 53, 53); border-color: black}
+    
+}
+
+
+
+.sortiment:hover .không_ai_hiểu_toi{
+    transform: translate(0, -20px);
+    transition: 0.5s;
+}
+
+
+.sortiment:hover .không_ai_hiểu_toi h3{
+    transform: scale(0.65);
+    transition: 0.5s;
+}
+
+.sortiment:hover img{
+    transform:scale(1.15);
+    transition: 0.5s;
+    
+}
+
+
+.Wache{
+    width: 100%;
+    display: flex;
+    margin: 100px 0;
+}
+
+.Prinz{
     width: 50%;
 }
 
-.ONE-text-placeholder p{
-    padding: 0 20% 0 10%;
-    line-height: 24px;
+.Prinz img{
+    width: 100%;
+}
+
+.itdontreallymatter{
+    width: 100%;
+    padding: 0 10vw 0 5vw;
+    line-height: 25px;
+}
+
+.Prinzessin{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.mehrErfahrer{
+    background-color: #E3000F;
+    color: white;
+    border: none;
+    width: 11rem;
+    height: 4rem;
+    transition: 0.5s;
+}
+.mehrErfahrer:hover {
+    
+    background-color: #C9000D;
+    transition: 0.7s;
+    width: 12rem;
+    height: 4.5rem;
+    
+}
+
+#eight{
+    width: 80%;
+    margin: 100px auto;
+    
+}
+
+
+.matryoshka img{
+    
+    transform: rotate(180deg) scale(0.7);
+
+}
+
+.on img{
+    transform: rotate(0deg) scale(0.75);
+}
+
+.hidden-reich{
+    display: none;
+}
+
+.on .hidden-reich{
+    display: flex;
+}
+
+.visible-reich{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.matryoshka{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.matryoshka__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.downloads{
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+[download]{
+    display: flex;
+    flex-flow: raw wrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.attack_on_titan_final_season_part_3_of_the_7th_part { 
+    position:relative; 
+}
+.attack_on_titan_final_season_part_3_of_the_7th_part video {
+    position:relative;
+    z-index:0;
+    filter: brightness(50%);
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    color: cornsilk;
+    width: 70%;
 }
