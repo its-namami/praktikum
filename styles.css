@@ -2,6 +2,21 @@
     font-family: InfoTextWebPro;
     src: url('fonts/InfoTextWebPro.woff');
 }
+.custom-prev, .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    padding-top: 10px;
+    margin: 0 25px;
+    cursor: pointer;
+    
+}
+
+a[download] p{
+    max-width: 80vw;
+    overflow-wrap: break-word;
+}
 
 *{
     margin: 0;
@@ -95,7 +110,7 @@ h1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 50px 30px;
+    padding: 4rem 3rem;
     align-items: center;
     margin: 0 auto;
 }
@@ -109,12 +124,12 @@ h1{
 
 .column li{
     display: flex;
-    padding-bottom: 14px;
+    padding-bottom: 1rem;
 }
 
 .Copyright{
-    margin-top: 46px;
-    margin-bottom: 120px;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
     display: flex;
     justify-content: center;
     
@@ -199,16 +214,7 @@ p{
 
 
 
-.custom-prev, .custom-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 20;
-    padding-top: 10px;
-    margin: 0 25px;
-    cursor: pointer;
-    
-}
+
 
 .custom-next {
     right: 0;
@@ -221,7 +227,7 @@ p{
 
 .custom-prev::before, .custom-next::before {
     content: '';
-    width: 100px;
+    width: 8rem;
     height: 1px;
     position: relative;
     top: -10px;
@@ -238,12 +244,12 @@ p{
 
 .book {
     width: 30%;
-    height: 600px;
+    height: 500px;
     
     flex: none;
-    margin: 0 8px;
+    margin: 0 1rem;
     box-sizing: border-box;
-    box-shadow: 0 0 30px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 4rem 1rem rgba(0,0,0,0.2);
     
 }
 
@@ -309,7 +315,7 @@ p{
 
 .after-pfeil::after{
     content: '＞';
-    padding-left: 7px;
+    padding-left: 0.5rem;
     color: red;
     font-weight: 600;
 }
@@ -578,7 +584,8 @@ strong{
 .downloads{
     display: flex;
     flex-flow: column wrap;
-    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
     width: 100%;
 }
 
@@ -587,17 +594,28 @@ strong{
     flex-flow: raw wrap;
     justify-content: space-between;
     padding: 0 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 
 .attack_on_titan_final_season_part_3_of_the_7th_part { 
     position:relative; 
+    
+}
+
+#myVideo{
+    width: 100%;
+    
+    
 }
 .attack_on_titan_final_season_part_3_of_the_7th_part video {
     position:relative;
     z-index:0;
     filter: brightness(50%);
+    
+    object-fit: contain;
+    overflow: clip;
+    
 }
 .overlay {
     position: absolute;
@@ -608,3 +626,353 @@ strong{
     color: cornsilk;
     width: 70%;
 }
+
+
+
+/*
+
+Ab hier mach ich alles responsive oder in anderen Worten 
+"MMOOBbiiLLEE ffRREENNDDLLYY" wie lustig
+
+*/
+/*Tablets oder so*/
+
+@media only screen and (max-width: 900px) {
+    .text-one h1 {
+        font-size: 40px;
+      }
+      .custom-prev, .custom-next{
+          
+          top: 70%;
+      }
+      .books-parent{
+          width: 100vw;
+      }
+  
+      .book{
+          width: 65vw;
+          height: 60vh;
+          margin-bottom: 10%;
+          border-radius: 10%;
+
+      }
+
+      .book img{
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15%;
+      }
+      .active{
+          display: flex;
+          flex-direction: column;
+      }
+      .text-areal{
+          width: 100vw;
+      }
+      .text-areal *{
+        font-size: 25px;
+    }
+      .image-areal img{
+          max-width: 100vw;
+      }
+      .text{
+          text-align: center;
+      }
+      .text-areal p {
+          padding: 2vh 5vw 5vh 5vw;
+          
+      }
+      
+      .after-pfeil{
+          display: flex;
+          justify-content: center;
+      }
+  
+      .button-areal{
+          margin-bottom: 0;
+      }
+      .one-button{
+          font-size: 1.5rem;
+          
+      }
+      .btnSortiment {
+        padding: 2rem 3rem;
+        background-color: transparent;
+        border: 1px solid black;
+        color: black;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 25%;
+        bottom: 75%;
+    }
+
+    .links a{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+  
+      .after-pfeil::after{
+          content: '<';
+          padding-left: 5rem;
+          color: red;
+          font-weight: 600;
+      }
+      .after-pfeil::before{
+          content: '>';
+          padding-right: 0.5rem;
+          color: red;
+          font-weight: 600;
+      }
+      .after-pfeil{
+        z-index: 2;
+      }
+  
+      hr{
+          max-width: 100vw;
+          width: 100%;
+          margin: 0 0;
+      }
+      #blumen{
+          flex-direction: column;
+      }
+      .sortiment:hover .không_ai_hiểu_toi {
+          transform: translate(0, -1rem);
+          transition: 0.5s;
+      }
+      .imgPlaceholder img {
+          margin-top: 20dvh;
+          width: 100%;
+          z-index: 2;
+      }
+  
+      .Wache{
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .Prinz{
+          width: 100%;
+      }
+  
+      .Prinzessin{
+          width: 100%;
+          text-align: center;
+          
+      }
+  
+      .itdontreallymatter {
+          width: 100%;
+          padding: 5vh;
+      }
+
+      .links a{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+      }
+      
+  
+  
+  
+  
+      .attack_on_titan_final_season_part_3_of_the_7th_part{
+          max-width: 100vw;
+      }
+  
+      .attack_on_titan_final_season_part_3_of_the_7th_part h2{
+          font-size: 1.5rem
+      }
+      .attack_on_titan_final_season_part_3_of_the_7th_part h3{
+          font-size: 1rem
+      }
+      .on{
+          max-width: 90vw;
+          margin-left: -0
+      }
+  
+      .container{
+          justify-content: center;
+      }
+  
+      .container ul{
+              display: block;
+              list-style-type: disc;
+              margin-block-start: 0;
+              margin-block-end: 0;
+              margin-inline-start: 0px;
+              margin-inline-end: 0px;
+              padding-inline-start: 0;
+              unicode-bidi: isolate;
+  
+      }
+  
+      .column{
+          margin-left: 5vw;
+          text-align: center;
+      }
+    .custom-prev, .custom-next{
+        
+        top: 70%;
+    }
+  }
+
+
+/*Handys*/
+@media only screen and (max-width: 600px) {
+
+    .text-one h1 {
+      font-size: 40px;
+    }
+    .custom-prev, .custom-next{
+        
+        top: 70%;
+    }
+    .books-parent{
+        width: 100vw;
+    }
+
+    .book{
+        width: 80vw;
+        height: 60vh;
+        margin-bottom: 10%;
+        border-radius: 10%;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-areal{
+        width: 100vw;
+    }
+
+    .image-areal img{
+        max-width: 100vw;
+    }
+    .text{
+        text-align: center;
+    }
+    .text-areal p {
+        padding: 2vh 5vw 5vh 5vw;
+    }
+    .after-pfeil{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-areal{
+        margin-bottom: 0;
+    }
+    .one-button{
+        font-size: 1rem;
+        
+    }
+
+    .after-pfeil::after{
+        content: '<';
+        padding-left: 5rem;
+        color: red;
+        font-weight: 600;
+    }
+    .after-pfeil::before{
+        content: '>';
+        padding-right: 0.5rem;
+        color: red;
+        font-weight: 600;
+    }
+
+    hr{
+        max-width: 100vw;
+        width: 100%;
+        margin: 0 0;
+    }
+    #blumen{
+        flex-direction: column;
+    }
+    .sortiment:hover .không_ai_hiểu_toi {
+        transform: translate(0, -1rem);
+        transition: 0.5s;
+    }
+    .imgPlaceholder img {
+        margin-top: 20dvh;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .Wache{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Prinz{
+        width: 100%;
+    }
+
+    .Prinzessin{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .itdontreallymatter {
+        width: 100%;
+        padding: 5vh;
+    }
+
+    [download]{
+        flex-flow: column wrap;
+        
+    }
+
+    
+
+
+
+
+    .attack_on_titan_final_season_part_3_of_the_7th_part{
+        max-width: 100vw;
+    }
+
+    .attack_on_titan_final_season_part_3_of_the_7th_part h2{
+        font-size: 1.5rem
+    }
+    .attack_on_titan_final_season_part_3_of_the_7th_part h3{
+        font-size: 1rem
+    }
+    .on{
+        max-width: 90vw;
+        margin-left: -3vw
+    }
+    #myVideo{
+        width: 100vw;
+        
+        
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .container ul{
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 0;
+            unicode-bidi: isolate;
+
+    }
+
+    .column{
+        margin-left: 5vw;
+        text-align: center;
+    }
+    .links a{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+      }
+  }
