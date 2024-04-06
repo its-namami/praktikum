@@ -671,7 +671,58 @@ Ab hier mach ich alles responsive oder in anderen Worten
         justify-content: center;
         margin-bottom: 2rem;
     }
+
+    .books-parent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .book{
+        width:47%;
+        margin-bottom: 1em;
+    }
+    .book.toi{
+        width: 100%;
+    }
+
+    .links a{
+        font-size: 1rem;
+    }
+
 }
+@media only screen and (max-width: 550.98px){
+    .links{
+        display: none !important;
+    }
+
+    .logo.one{
+        display: flex !important;
+    }
+
+    header{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+@media only screen and (max-width: 657.98px){
+    .logo{
+        width: 60% !important;
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        width: 100% !important;
+    }
+
+    .links a{
+        font-size: 0.6rem !important;
+        
+    }
+
+    .links{
+        padding: 0.5rem 0.5rem !important;
+    }
+}
+
 @media only screen and (max-width: 767.98px) {
 
 
@@ -829,8 +880,9 @@ Ab hier mach ich alles responsive oder in anderen Worten
     }
     .links a{
         padding: 1rem 1rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
+
 
       .itdontreallymatter h2{
         line-height: 50px;
@@ -848,5 +900,8 @@ Ab hier mach ich alles responsive oder in anderen Worten
       }
       .logos{
         margin-top: 2rem;
+      }
+      .divider{
+        margin: 5px 0;
       }
   }
