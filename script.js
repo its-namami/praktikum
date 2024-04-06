@@ -38,26 +38,35 @@ visible.forEach((clicked, index) => {
 });
 
 
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
+
+const title = document.querySelectorAll("#t-main");
+const t_des_manxt = document.querySelectorAll("#t-des-main");
+
+let maxHeight = 0;
+
+// Calculate the maximum height
+
+
+changeHeight(title);
+
+
+
+function changeHeight(elements) {
+    elements.forEach(value => {
+        const height = value.offsetHeight;
+        if (height > maxHeight) {
+            maxHeight = height;
+        }
+    });
+    
+    elements.forEach((value)=>{
+        let n = maxHeight;
+        n=maxHeight+'px';     
+        console.log(value) ;  
+        value.style.height = n;
+    })
 }
-
-
-
-
-
-
-
-
 
 
 
