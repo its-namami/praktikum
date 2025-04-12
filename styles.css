@@ -9,7 +9,6 @@
 }
 header{
     display: flex;
-    border: 5px solid rgb(0, 200, 255);
     padding: 18px;
     justify-content: space-between;
 }
@@ -20,13 +19,15 @@ header{
     
     
 }
-
-.links a{
+a{
     text-decoration:none;
     color: black;
+}
+.links a{
+    
+    
     display: inline;
     padding: 25px 20px;
-    border: 1px ridge oldlace;
     margin: 1px;
     font-weight: 100;
 }
@@ -58,15 +59,74 @@ h1{
     
 }
 
-.logo_footer{
-    height: auto;
-    max-width: 100%;
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 30px;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.top_footer{
-
-    padding: 70px;
-    padding-bottom: 30px;
+.footer .logo{
     display: flex;
-    flex: auto;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.column li{
+    display: flex;
+    padding-bottom: 14px;
+}
+
+.Copyright{
+    margin-top: 46px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+hr{
+    max-width: 1640px;
+    width: 100%;
+    margin: 14px 0;
+}
+
+.logo-str a:hover img{
+    filter: invert(12%) sepia(99%) saturate(6637%) hue-rotate(18deg) brightness(104%) contrast(110%);
+}
+
+.grey{
+    color: #9F9F9F;
+}
+
+.lightgrey{
+    color: #DEDEDE;
+}
+
+.red{
+    color: #E3000F;
+}
+
+.darkred{
+    color: #C9000D;
+}
+
+h1{
+    font-size: 106px;
+}
+
+h2{
+    font-size: 60px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+p{
+    font-size: 18px;
 }
