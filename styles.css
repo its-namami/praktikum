@@ -889,7 +889,7 @@ Ab hier mach ich alles responsive oder in anderen Worten
       }
 
       .logo{
-        width: 100%;
+        width: 100% !important;
         display: flex;
         flex-direction: row;
         justify-content: center;
