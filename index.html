@@ -17,11 +17,11 @@
       
 
     <header>
-        <div class="logo one"><a href="/">
+        <div class="logo one"><a href="">
             <img src="./files/01_header/Logo.svg" alt="Logo"></a>
         </div>
         <div class="links">
-            <p class="one"><a href="www.google.com">Unternehmen</a></p>
+            <p class="one"><a href="">Unternehmen</a></p>
             <p class="two"><a href="">Sortiment</a></p>
             <p class="three"><a href="">Nachhaltigkeit</a></p>
             <p class="four"><a href="">Downloads</a></p>
@@ -40,27 +40,32 @@
     <div class="swiper">
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img class="slide-one" src="files/03_slider/slide_one.jpg" alt=""><div class="text-one">
-            <div class="top"><p>Fancy up your life.</p></div>
-            <div class="middle"><h1>Fancy Fancy.</h1></div>
-            <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
-        </div>
-    </div>
-          <div class="swiper-slide"><img class="slide-one" src="files/03_slider/slide_two.jpg" alt=""><div class="text-one">
-            <div class="top"><p>Legendary Petunias.</p></div>
-            <div class="middle"><h1>SKYfamily</h1></div>
-            <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
-        </div></div>
-          <div class="swiper-slide"><img class="slide-one" src="files/03_slider/slide_three.jpg" alt=""><div class="text-one">
-            <div class="top"><p>Trockenheitstolerante Sorten</p></div>
-            <div class="middle"><h1 style="display: flex; flex-wrap: nowrap;">Planta Morgana</h1></div>
-            <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
-        </div></div>
+            <div class="swiper-slide"><img class="slide-one" src="files/03_slider/slide_one.jpg" alt="">
+                <div class="text-one">
+                    <div class="top"><p>Fancy up your life.</p></div>
+                    <div class="middle"><h1>Fancy Fancy.</h1></div>
+                    <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="slide-one" src="files/03_slider/slide_two.jpg" alt="">
+                <div class="text-one">
+                    <div class="top"><p>Legendary Petunias.</p></div>
+                    <div class="middle"><h1>SKYfamily</h1></div>
+                    <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
+                </div>
+            </div>
+            <div class="swiper-slide"><img class="slide-one" src="files/03_slider/slide_three.jpg" alt="">
+                <div class="text-one">
+                    <div class="top"><p>Trockenheitstolerante Sorten</p></div>
+                    <div class="middle"><h1 style="display: flex; flex-wrap: nowrap;">Planta Morgana</h1></div>
+                    <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
+                </div>
+            </div>
         </div>
         <div class="custom-prev lightgrey">zurück</div>
         <div class="custom-next lightgrey right">vor</div>
-      </div>
-    </div>
+</div>
+
       
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script>
@@ -75,22 +80,61 @@
   
       </script> 
     <div class="kacheln">
-        <div class="books">
+        <div class="books-parent">
             <div class="book one">
-                
+                <img src="files/04_kacheln/News_Mai_spring_2023.jpg">
+                <div class="text">
+                    <div class="t-main"><h1>Neuer Spring Katalog 2023/2024</h1></div>
+                    <div class="t-des-main">Jetzt verfügbar: der neue 
+                        Katalog Spring Annuals und Trixi für die Saison 2023/2024</div>
+                    <hr class="divider">
+                    <a href=""class="after-pfeil">Mehr dazu</a>
+
+                </div>
             </div>
             <div class="book two">
-
+                <img src="files/04_kacheln/News_Maerz_DianthusESC202324.jpg">
+                <div class="text">
+                    <div class="t-main"><h1>Neuer Dianthus und Early Spring Crops Katalog 2023/2024</h1></div>
+                    <div class="t-des-main">Der neue Dianthus und Early 
+                        Spring Crops Katalog 2023/2024 ist jetzt verfügbar!</div>
+                    <hr class="divider">
+                    <a href="" class="after-pfeil">Mehr dazu</a>
+                </div>
             </div>
             <div class="book three">
-
+                <img src="files/04_kacheln/News_Januar_onemagazin2023_4.Ausgabe.jpg">
+                <div class="text">
+                    <div class="t-main"><h1>Die 4. Ausgabe des one magazine ist da!</h1></div>
+                    <div class="t-des-main">Wir präsentieren Ihnen die 4. Ausgabe 
+                        unseres Retail-Magazines one magazine.</div>
+                    <hr class="divider">
+                    <a href=""class="after-pfeil">Mehr dazu</a>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="tiles">
+        <div class="ONE-clickables">
+            <button id="ONE-1" onclick="document.getElementById('ONE-image').src='./files/05_tiles/One_Arbeitgeber.jpg'">ONE Team</button>
+            <button id="ONE-2" checked>ONE Karriere</button><!-- the default one-->
+            <button id="ONE-3">ONE Arbeitgeber</button>
+        </div>
+        <div class="ONE-content">
+            
+                <img id="ONE-image" src="./files/05_tiles/One_Karriere_01.jpg">
+            <div class="ONE-text-placeholder">
+                <p id="ONE-text-one"><strong>we love to grow®</strong> gilt nicht nur für unsere Produkte. Wir leben unser Motto jeden Tag und in jedem Bereich – insbesondere, wenn es um die Entwicklung und Bedürfnisse unserer Mitarbeiter geht. Denn als Unternehmen sind wir nur dann langfristig erfolgreich, wenn sich unser ONE Team mit uns entwickelt und wächst. Daher bieten wir unseren Mitarbeitern individuelle Weiterentwicklungs- und Karrieremöglichkeiten sowie Nachwuchsförderprogramme im In- und Ausland.</p>
+            </div>
+
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <div class="footer logo">
-                <img src="files/01_header/Logo.svg">
+                <a href=""><img src="files/01_header/Logo.svg"></a>
             </div>
             <div class="footer column">
                 <ul>
@@ -132,5 +176,6 @@
 
         
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

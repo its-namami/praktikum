@@ -6,19 +6,43 @@
 *{
     margin: 0;
     font-family: InfoTextWebPro;
+    
 }
-header{
+/*header{
     display: flex;
     padding: 18px;
+    justify-content: space-between;
+}*/
+
+body{
+    overflow-x: hidden;
+}
+.logo{
+    padding: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color: white;
+    margin-bottom: 10px;
+    z-index: 100;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
 }
 
 .links{
     display: flex;
     align-items: center;
-    
+    padding: 10px
     
 }
+
 a{
     text-decoration:none;
     color: black;
@@ -72,7 +96,7 @@ li a{
     text-align:center;
     transform: translateX(-50%) translateY(-50%);
     color: cornsilk;
-    white-space:nowrap
+    white-space:nowrap;
     
 }
 
@@ -184,6 +208,10 @@ p{
     
 }
 
+.swiper{
+    box-shadow: 0 0 30px 5px rgba(0,0,0,0.2);
+}
+
 
 
 
@@ -237,7 +265,143 @@ p{
 
 */
 
-.book .one{
+.book {
+    width: 30%;
+    height: 600px;
+    
+    flex: none;
+    margin: 0 8px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    box-shadow: 0 0 30px 5px rgba(0,0,0,0.2);
+    
+}
+
+.book div{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.books-parent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
     height: 100%;
+    align-items: stretch; 
+    padding: 80px;
+    justify-content: center;
+    
+}
+
+.book img{
     width: 100%;
+    
+}
+
+.divider{
+    height: 1px;
+    background-color: lightgrey;
+    border: none;
+}
+
+.text{
+    padding: 7% 14%;
+    height: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+}
+
+
+
+.t-main{
+    font-weight: 900;
+
+    
+}
+
+.t-des-main{
+    font-weight: 100;
+}
+
+.text h1{
+    font-size: 18px;
+}
+
+.after-pfeil{
+    font-size: 16px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+.after-pfeil::after{
+    content: '＞';
+    padding-left: 7px;
+    color: red;
+    font-weight: 600;
+}
+
+.ONE-clickables{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ONE-clickables button{
+    border: none;
+    background-color: white;
+    color: lightgrey;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.ONE-clickables button:focus{
+    color: black;
+    font-weight: 900;
+}
+
+.ONE-clickables button:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; /* Adjust the height of the line as needed */
+    background-color: red; /* Change the color of the line */
+    margin-top: 5px; /* Adjust the distance between the button and the line */
+}
+
+.tiles{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid blue;
+}
+
+.ONE-content{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+}
+
+.ONE-content img{
+    width: 50%;
+    margin-top: 50px;
+}
+
+.ONE-image-placeholder{
+    width: 50%;
+}
+
+.ONE-text-placeholder{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.ONE-text-placeholder p{
+    padding: 0 20% 0 10%;
+    line-height: 24px;
 }
