@@ -28,20 +28,33 @@ a{
     
     display: inline;
     padding: 25px 20px;
-    margin: 1px;
     font-weight: 100;
+    transition: 0.3s;
+    
 }
 
+.links a:hover{
+    border: 1px solid green;
+    border-radius: 10% / 50%;
+}
+li a:hover{
+    border: 1px solid green;
+    border-radius: 10% / 50%;
+}
+li a{
+    transition: 0.2s;
+}
 .ichi img{
     height: 100dvh;
     object-fit: cover;
     width: 100%;
     vertical-align: middle;
-    
+    filter: brightness(70%);
 }
 
+
 .text-one{
-    align-items: center;
+    /*!align-items: center;
     display: flex;
     height: 100%;
     justify-content: center;
@@ -51,6 +64,16 @@ a{
     width: 100%;
     flex-flow: column wrap;
     color: cornsilk;
+    margin-top: 100px;
+    z-index: 1;*/
+    position:absolute;
+    top:50%;
+    left:50%; 
+    text-align:center;
+    transform: translateX(-50%) translateY(-50%);
+    color: cornsilk;
+    white-space:nowrap
+    
 }
 
 h1{
@@ -90,7 +113,7 @@ h1{
 }
 
 hr{
-    max-width: 1640px;
+    max-width: 100vw;
     width: 100%;
     margin: 14px 0;
 }
@@ -129,4 +152,68 @@ h3{
 
 p{
     font-size: 18px;
+}
+
+.button-one{
+    padding: 25px 45px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.button-one:hover {
+    background-color:#fff;
+    color: black;
+    transition: 0.7s;
+    border-color: black
+}
+
+
+.text-one h1{
+    padding: 40px;
+}
+
+.swiper img{
+    height: 100dvh;
+    object-fit: cover;
+    width: 100%;
+    vertical-align: middle;
+    filter: brightness(70%);
+    position: relative;
+}
+
+
+
+
+.custom-prev, .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    padding-top: 10px;
+    margin: 0 25px;
+}
+
+.custom-next {
+    right: 0;
+    
+}
+
+.custom-prev {
+    left: 0;
+}
+
+.custom-prev::before, .custom-next::before {
+    content: '';
+    width: 100px;
+    height: 1px;
+    position: relative;
+    top: -10px;
+    display: flex;
+    z-index: 20;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.right{
+    text-align: right;
 }

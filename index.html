@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
+    
+
+      
+      
+
     <header>
-        <div class="logo"><a href="/">
+        <div class="logo one"><a href="/">
             <img src="./files/01_header/Logo.svg" alt="Logo"></a>
         </div>
         <div class="links">
-            <p class="one"><a href="">Unternehmen</a></p>
+            <p class="one"><a href="www.google.com">Unternehmen</a></p>
             <p class="two"><a href="">Sortiment</a></p>
             <p class="three"><a href="">Nachhaltigkeit</a></p>
             <p class="four"><a href="">Downloads</a></p>
@@ -20,14 +29,51 @@
         </div>
     </header>
     <div class="ichi">
-        <picture><img class="slide-one" src="files/03_slider/slide_one.jpg" alt=""></picture>
+        <!--<picture><img class="slide-one" src="files/03_slider/slide_one.jpg" alt=""></picture>
         
         <div class="text-one">
             <div class="top"><p>Fancy up your life.</p></div>
             <div class="middle"><h1>Fancy Fancy.</h1></div>
             <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
+        </div>-->
+    </div>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img class="slide-one" src="files/03_slider/slide_one.jpg" alt=""><div class="text-one">
+            <div class="top"><p>Fancy up your life.</p></div>
+            <div class="middle"><h1>Fancy Fancy.</h1></div>
+            <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
         </div>
     </div>
+          <div class="swiper-slide"><img class="slide-one" src="files/03_slider/slide_two.jpg" alt=""><div class="text-one">
+            <div class="top"><p>Legendary Petunias.</p></div>
+            <div class="middle"><h1>SKYfamily</h1></div>
+            <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
+        </div></div>
+          <div class="swiper-slide"><img class="slide-one" src="files/03_slider/slide_three.jpg" alt=""><div class="text-one">
+            <div class="top"><p>Trockenheitstolerante Sorten</p></div>
+            <div class="middle"><h1 style="display: flex; flex-wrap: nowrap;">Planta Morgana</h1></div>
+            <div class="bottom"><button class="button-one">Mehr erfahren</button></div>
+        </div></div>
+        </div>
+        <div class="custom-prev lightgrey">zurück</div>
+        <div class="custom-next lightgrey right">vor</div>
+      </div>
+    </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+          const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.custom-next',
+      prevEl: '.custom-prev',
+    },
+  });
+  
+      </script> 
     <footer>
         <div class="container">
             <div class="footer logo">
