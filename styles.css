@@ -180,6 +180,8 @@ p{
     vertical-align: middle;
     filter: brightness(70%);
     position: relative;
+    cursor: -webkit-grab;
+    
 }
 
 
@@ -192,6 +194,8 @@ p{
     z-index: 20;
     padding-top: 10px;
     margin: 0 25px;
+    cursor: pointer;
+    
 }
 
 .custom-next {
@@ -216,4 +220,24 @@ p{
 
 .right{
     text-align: right;
+}
+
+
+
+/*
+.book{
+    padding: 0 8px;
+    filter: drop-shadow(0 0 15px black);
+    display: flex;
+    flex-flow: column wrap;
+    height: 600px;
+    flex: 0 0 auto;
+    width: 33%;
+}
+
+*/
+
+.book .one{
+    height: 100%;
+    width: 100%;
 }
